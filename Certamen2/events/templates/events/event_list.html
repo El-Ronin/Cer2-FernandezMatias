@@ -1,0 +1,22 @@
+{% extends "events/base.html" %}
+{% block title %}Eventos{% endblock %}
+{% block content %}
+<h1>Eventos</h1>
+<div class="cards">
+  {% for e in events %}
+    <article class="card">
+      {% if e.image_url %}
+        <img src="{{ e.image_url }}" alt="{{ e.title }}">
+      {% endif %}
+      <h2>{{ e.title }}</h2>
+      <p><strong>Fecha y hora:</strong> {{ e.start_datetime|date:"d/m/Y H:i" }}</p>
+      <p><strong>Lugar:</strong> {{ e.location }}</p>
+      <p><strong>Valor:</strong> ${{ e.price }}</p>
+      <p><strong>Plazas disponibles:</strong> {{ e.seats_available }}</p>
+      <a href="{% url 'events:event_detail' e.pk %}">Ver detalles</a>
+    </article>
+  {% empty %}
+    <p>No hay eventos publicados aún.</p>
+  {% endfor %}
+</div>
+{% endblock %}
