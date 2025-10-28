@@ -8,12 +8,12 @@ from .models import Event, Registration
 from .forms import SignUpForm
 from django.contrib.auth.models import User
 
-# Lista de eventos publicos 
+# lista de eventos
 def event_list(request):
     events = Event.objects.all()
     return render(request, "events/event_list.html", {"events": events})
 
-# Detalle de eventos
+# detalle de eventos
 def event_detail(request, pk):
     event = get_object_or_404(Event, pk=pk)
     already_registered = False
@@ -21,7 +21,7 @@ def event_detail(request, pk):
         already_registered = Registration.objects.filter(user=request.user, event=event).exists()
     return render(request, "events/event_detail.html", {"event": event, "already_registered": already_registered})
 
-# Sign up
+# sign up
 def signup(request):
     if request.method == "POST":
         form = SignUpForm(request.POST)
@@ -38,7 +38,7 @@ def signup(request):
         form = SignUpForm()
     return render(request, "registration/signup.html", {"form": form})
 
-# Registro a un evento
+# Registro para evento
 @login_required
 def register_event(request, pk):
     event = get_object_or_404(Event, pk=pk)
@@ -52,7 +52,7 @@ def register_event(request, pk):
         messages.success(request, "Registro realizado con éxito.")
     return redirect("events:detail", pk=pk)
 
-# Cancelar registro
+# cancelar registro
 @login_required
 def cancel_registration(request, pk):
     event = get_object_or_404(Event, pk=pk)
@@ -60,7 +60,7 @@ def cancel_registration(request, pk):
     messages.success(request, "Tu inscripción ha sido anulada.")
     return redirect("events:my_events")
 
-# Lista de eventos
+# mis eventos
 @login_required
 def my_events(request):
     regs = Registration.objects.filter(user=request.user).select_related("event")

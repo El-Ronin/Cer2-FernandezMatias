@@ -1,0 +1,1 @@
+Coloca aquí tus assets (CSS/JS/imagenes) reutilizados del Certamen 1 si deseas mantener tu diseño.
