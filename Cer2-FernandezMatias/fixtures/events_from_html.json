@@ -1,0 +1,134 @@
+[
+  {
+    "model": "events.event",
+    "pk": 1,
+    "fields": {
+      "title": "Ven a conocer al Gato banana",
+      "description": "Evento importado desde HTML",
+      "datetime": "2025-09-20T15:30:00",
+      "location": "Centro de Quilpué",
+      "price": "0.0",
+      "capacity": 200
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 2,
+    "fields": {
+      "title": "Ven a conocer a Big Flopa",
+      "description": "Evento importado desde HTML",
+      "datetime": "2025-09-25T10:00:00",
+      "location": "Centro de Quilpué",
+      "price": "5000.0",
+      "capacity": 200
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 3,
+    "fields": {
+      "title": "Oiiaioiiiai en VIVO por primera vez",
+      "description": "Evento importado desde HTML",
+      "datetime": "2025-10-05T14:00:00",
+      "location": "Centro de Quilpué",
+      "price": "3000.0",
+      "capacity": 200
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 4,
+    "fields": {
+      "title": "MichiPalooza",
+      "description": "Evento importado desde HTML",
+      "datetime": "2025-09-15T18:00:00",
+      "location": "Universidad Tecnica Gatuna Santa Michi",
+      "price": "0.0",
+      "capacity": 200
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 5,
+    "fields": {
+      "title": "Ven a conocer a Rigby",
+      "description": "Evento importado desde HTML",
+      "datetime": "2025-09-15T14:00:00",
+      "location": "En el Centro de Quilpué",
+      "price": "0.0",
+      "capacity": 200
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 6,
+    "fields": {
+      "title": "Charla motivacional con \"huh\" el gato",
+      "description": "Evento importado desde HTML",
+      "datetime": "2025-09-28T13:00:00",
+      "location": "Universidad Tecnica Gatuna Santa Michi",
+      "price": "0.0",
+      "capacity": 200
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 7,
+    "fields": {
+      "title": "Michi clases de baile",
+      "description": "Evento importado desde HTML",
+      "datetime": "2025-10-04T12:00:00",
+      "location": "Universidad Tecnica Gatuna Santa Michi",
+      "price": "2000.0",
+      "capacity": 200
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 8,
+    "fields": {
+      "title": "La velada gatuna",
+      "description": "Evento importado desde HTML",
+      "datetime": "2025-10-11T18:00:00",
+      "location": "Teatro Miaunicipal Juan Bustos Ramírez de Quilpué",
+      "price": "2000.0",
+      "capacity": 200
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 9,
+    "fields": {
+      "title": "Abducción gatuna en masa",
+      "description": "Evento importado desde HTML",
+      "datetime": "2025-12-31T12:00:00",
+      "location": "%&!\"#$#\"$+*",
+      "price": "0.0",
+      "capacity": 200
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 10,
+    "fields": {
+      "title": "Larry",
+      "description": "Evento importado desde HTML",
+      "datetime": "2025-12-31T12:00:00",
+      "location": "Larry",
+      "price": "0.0",
+      "capacity": 200
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 11,
+    "fields": {
+      "title": "Evento social para Gatos veteranos",
+      "description": "Evento importado desde HTML",
+      "datetime": "2025-10-25T08:00:00",
+      "location": "Asilo para michis veteranos",
+      "price": "0.0",
+      "capacity": 200
+    }
+  }
+]

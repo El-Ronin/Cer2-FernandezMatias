@@ -1,0 +1,12 @@
+/* Pega aquí tu paleta del Certamen 1 */
+:root{
+  --brand-bg: #0b132b;
+  --brand-primary: #1c2541;
+  --brand-accent: #3a506b;
+  --brand-muted: #5bc0be;
+  --brand-contrast: #ffffff;
+}
+.navbar{ background-color: var(--brand-bg) !important; }
+.btn-primary{ background-color: var(--brand-accent); border-color: var(--brand-accent); }
+a{ color: var(--brand-muted); }
+body{ background-color: #f8f9fb; }

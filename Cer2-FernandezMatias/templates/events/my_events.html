@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Mis eventos</h1>
+<div class="list-group">
+  {% for r in registrations %}
+    <div class="list-group-item">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <div class="fw-bold">{{ r.event.title }}</div>
+          <div class="small text-muted">{{ r.event.datetime|date:"d/m/Y H:i" }} — {{ r.event.location }}</div>
+        </div>
+        <a class="btn btn-sm btn-outline-danger" href="{% url 'events:cancel' r.event.pk %}">Anular</a>
+      </div>
+    </div>
+  {% empty %}
+    <p>No tienes inscripciones.</p>
+  {% endfor %}
+</div>
+{% endblock %}

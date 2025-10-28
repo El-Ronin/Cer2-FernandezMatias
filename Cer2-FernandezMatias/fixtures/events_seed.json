@@ -1,0 +1,26 @@
+[
+  {
+    "model": "events.event",
+    "pk": 1,
+    "fields": {
+      "title": "Concierto Primavera",
+      "description": "Música en vivo para recibir la primavera.",
+      "datetime": "2025-11-15T20:00:00Z",
+      "location": "Teatro Municipal",
+      "price": "12000.00",
+      "capacity": 150
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 2,
+    "fields": {
+      "title": "Feria Tech",
+      "description": "Demostraciones de proyectos y charlas.",
+      "datetime": "2025-12-02T10:30:00Z",
+      "location": "Centro de Eventos",
+      "price": "0.00",
+      "capacity": 300
+    }
+  }
+]
